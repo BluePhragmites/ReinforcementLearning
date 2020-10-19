@@ -1,0 +1,9 @@
+Qtable :
+S: State
+S': next State
+A : action
+a : all action
+
+# 使用下一个状态的最好情况来更新当前状态
+Q(S,A) <- Q(S,A) + alpha*(R + gamma*maxQ(S',a) - Q(S,A))
+S      <- S'
